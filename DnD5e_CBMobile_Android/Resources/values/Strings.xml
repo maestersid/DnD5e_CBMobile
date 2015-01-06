@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="hello">Hello World, Click Me!</string>
-	<string name="app_name">DnD5e_CBMobile_Android</string>
+	<string name="app_name">Dungeons and Dragons 5</string>
+	<string name="newCharacter">Create New Character</string>
 </resources>

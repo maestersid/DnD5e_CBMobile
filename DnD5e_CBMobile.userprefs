@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DnD5e_CBMobile_Android\CharacterSheetActivity.cs">
     <Files>
       <File FileName="DnD5e_CBMobile_Android\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Android\CharacterSheetActivity.cs" Line="3" Column="3" />
+      <File FileName="DnD5e_CBMobile_Android\Resources\values\Strings.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
