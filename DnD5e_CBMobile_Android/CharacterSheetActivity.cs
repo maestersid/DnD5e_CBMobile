@@ -16,7 +16,6 @@ namespace DnD5e_CBMobile_Android
 	[Activity (Label = "@string/newCharacter")]			
 	public class CharacterSheetActivity : Activity
 	{
-		private CharacterSheet
 
 		protected override void OnCreate (Bundle bundle)
 		{

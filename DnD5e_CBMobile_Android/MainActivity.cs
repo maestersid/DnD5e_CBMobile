@@ -16,15 +16,15 @@ namespace DnD5e_CBMobile_Android
 		{
 			base.OnCreate (bundle);
 
+			// Set our view from the "main" layout resource
+			SetContentView (Resource.Layout.StartPage);
+
 			Button newCharacterBtn = FindViewById<Button> (Resource.Id.NewCharacterBtn);
 			newCharacterBtn.Click += (sender, e) =>
 			{
 				var intent = new Intent(this, typeof(CharacterSheetActivity));
 				StartActivity(intent);
 			};
-
-			// Set our view from the "main" layout resource
-			SetContentView (Resource.Layout.StartPage);
 		}
 			
 	}
