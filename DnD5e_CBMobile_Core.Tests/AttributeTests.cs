@@ -75,6 +75,98 @@ namespace DnD5e_CBMobile_Core.Tests
 			Attributes testAttributes = new Attributes { Strength = attributeValue };
 			Assert.That (testAttributes.StrengthModifier, Is.EqualTo (expectedModifier));
 		}
+
+		[Test]
+		public void HashCodeShouldAlsoWork()
+		{
+			var attributes1 = new Attributes {
+				Strength = 10,
+				Dexterity = 10,
+				Constitution = 12,
+				Intelligence = 15,
+				Wisdom = 14,
+				Charisma = 8
+			};
+			var attributes2 = new Attributes {
+				Strength = 10,
+				Dexterity = 10,
+				Constitution = 12,
+				Intelligence = 15,
+				Wisdom = 14,
+				Charisma = 8
+			};
+
+			Assert.That (attributes1.GetHashCode(), Is.EqualTo (attributes2.GetHashCode()));
+		}
+
+		[Test]
+		public void AttributesAreEqualWhenAllValuesAreEqual()
+		{
+			var attributes1 = new Attributes {
+				Strength = 10,
+				Dexterity = 10,
+				Constitution = 12,
+				Intelligence = 15,
+				Wisdom = 14,
+				Charisma = 8
+			};
+			var attributes2 = new Attributes {
+				Strength = 10,
+				Dexterity = 10,
+				Constitution = 12,
+				Intelligence = 15,
+				Wisdom = 14,
+				Charisma = 8
+			};
+
+			Assert.That (attributes1, Is.EqualTo (attributes2));
+		}
+
+		[Test]
+		public void AttributesAreEqualWhenValuesAreDifferent()
+		{
+			var attributes1 = new Attributes {
+				Strength = 10,
+				Dexterity = 10,
+				Constitution = 12,
+				Intelligence = 15,
+				Wisdom = 14,
+				Charisma = 8
+			};
+			var attributes2 = new Attributes {
+				Strength = 10,
+				Dexterity = 11,
+				Constitution = 12,
+				Intelligence = 15,
+				Wisdom = 14,
+				Charisma = 8
+			};
+
+			Assert.That (attributes1, Is.Not.EqualTo (attributes2));
+		}
+
+		[Test]
+		public void AttributesAreNotEqualToIntArrays()
+		{
+			var attributes1 = new Attributes {
+				Strength = 10,
+				Dexterity = 10,
+				Constitution = 12,
+				Intelligence = 15,
+				Wisdom = 14,
+				Charisma = 8
+			};
+			var attributes2 = new []{
+				10,
+				10,
+				12,
+				15,
+				14,
+				8
+			};
+
+			Assert.That (attributes2, Is.Not.EqualTo (attributes1));
+		}
 	}
 }
 

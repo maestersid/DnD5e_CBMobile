@@ -28,6 +28,31 @@ namespace DnD5e_CBMobile_Core
 			return baseLine/2;
 		}
 
+		public override bool Equals (object obj)
+		{
+			var other = obj as Attributes;
+			if (other == null) {
+				return false;
+			}
+			return Strength == other.Strength &&
+				Dexterity == other.Dexterity && 
+				Constitution == other.Constitution &&
+				Intelligence == other.Intelligence &&
+				Wisdom == other.Wisdom &&
+				Charisma == other.Charisma;
+		}
+
+		public override int GetHashCode ()
+		{
+			int hashCode = Strength;
+			hashCode = hashCode * 33 + Dexterity;
+			hashCode = hashCode * 33 + Constitution;
+			hashCode = hashCode * 33 + Intelligence;
+			hashCode = hashCode * 33 + Wisdom;
+			hashCode = hashCode * 33 + Charisma;
+			return hashCode;
+		}
+
 		public static Attributes operator +(Attributes op1, Attributes op2){
 			return new Attributes {
 				Strength = op1.Strength + op2.Strength,
