@@ -34,6 +34,8 @@
     <Compile Include="Attributes.cs" />
     <Compile Include="Race.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="CharacterSheet.cs" />
+    <Compile Include="Skill.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
