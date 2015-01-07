@@ -63,11 +63,6 @@ namespace DnD5e_CBMobile_Core
 				Charisma = op1.Charisma + op2.Charisma
 			};
 		}
-
-		public static int GetMod(int attr)
-		{
-			return (attr - 10) / 2;
-		}
 	}
 }
 
