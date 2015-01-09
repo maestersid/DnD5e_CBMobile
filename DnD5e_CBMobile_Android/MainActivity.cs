@@ -20,6 +20,8 @@ namespace DnD5e_CBMobile_Android
 			SetContentView (Resource.Layout.StartPage);
 
 			Button newCharacterBtn = FindViewById<Button> (Resource.Id.NewCharacterBtn);
+
+
 			newCharacterBtn.Click += (sender, e) =>
 			{
 				var intent = new Intent(this, typeof(CharacterSheetActivity));

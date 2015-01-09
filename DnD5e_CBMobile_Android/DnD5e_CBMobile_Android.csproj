@@ -61,4 +61,10 @@
     <AndroidResource Include="Resources\layout\CharacterSheetView.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\DnD5e_CBMobile_Core\DnD5e_CBMobile_Core.csproj">
+      <Project>{F96EB93A-B90E-4DFD-AE16-5E81B6EA6FA4}</Project>
+      <Name>DnD5e_CBMobile_Core</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

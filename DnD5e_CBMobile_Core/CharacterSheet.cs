@@ -17,6 +17,8 @@ namespace DnD5e_CBMobile_Core
 
 		public Race Race { get; set; }
 
+		public PlayerClass Class { get; set; }
+
 		public Attributes FinalAttributes { get { return baseAttributes + Race.BonusAttributes;} }
 
 		public void SetBaseAttributes (Attributes attributes)

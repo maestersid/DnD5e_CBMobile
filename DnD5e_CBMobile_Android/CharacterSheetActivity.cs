@@ -21,7 +21,6 @@ namespace DnD5e_CBMobile_Android
 		{
 			base.OnCreate (bundle);
 
-			// Create your application here
 			SetContentView (Resource.Layout.CharacterSheetView);
 		}
 	}
