@@ -1,8 +1,9 @@
-﻿<Properties>
+﻿<Properties StartupItem="DnD5e_CBMobile_Android/DnD5e_CBMobile_Android.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="DnD5e_CBMobile_Android/CharacterSheetActivity.cs" Line="3" Column="3" />
+      <File FileName="DnD5e_CBMobile_Core/CharacterSheet.cs" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Android/MainActivity.cs" Line="61" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

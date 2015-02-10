@@ -26,7 +26,4 @@ Global
 		{F96EB93A-B90E-4DFD-AE16-5E81B6EA6FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F96EB93A-B90E-4DFD-AE16-5E81B6EA6FA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = DnD5e_CBMobile_Android\DnD5e_CBMobile_Android.csproj
-	EndGlobalSection
 EndGlobal

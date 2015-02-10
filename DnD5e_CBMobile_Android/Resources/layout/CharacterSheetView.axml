@@ -8,7 +8,7 @@
     <TextView
         android:text="Character Name: "
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/textView1"
+        android:id="@+id/label1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
@@ -16,28 +16,45 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView1" />
+        android:id="@+id/label2"
+        android:layout_below="@+id/label1" />
     <TextView
         android:text="Character Level: "
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
+        android:id="@+id/label3"
+        android:layout_below="@+id/label2"
         android:layout_centerHorizontal="true" />
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:rowCount="3"
         android:columnCount="4"
-        android:layout_below="@+id/textView3">
+        android:orientation="vertical"
+        android:layout_below="@+id/label3">
         <TextView
             android:text="Str:" />
         <TextView
             android:text=" 10 " />
         <TextView
-            android:text="Int: " />
+            android:text="Dex: " />
+        <TextView
+            android:text=" 10 " />
+        <TextView
+            android:text="Con: " />
+        <TextView
+            android:text=" 10 " />
+        <TextView
+            android:text="Int:" />
+        <TextView
+            android:text=" 10 " />
+        <TextView
+            android:text="Wis: " />
+        <TextView
+            android:text=" 10 " />
+        <TextView
+            android:text="Cha: " />
         <TextView
             android:text=" 10 " />
     </GridLayout>

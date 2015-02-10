@@ -5,11 +5,8 @@ using System.Linq;
 using System.Text;
 
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+using DnD5e_CBMobile_Core;
 
 namespace DnD5e_CBMobile_Android
 {
@@ -17,11 +14,21 @@ namespace DnD5e_CBMobile_Android
 	public class CharacterSheetActivity : Activity
 	{
 
+		private CharacterSheet testCharacter;
+
 		protected override void OnCreate (Bundle bundle)
 		{
+		
 			base.OnCreate (bundle);
 
+			//Create dummy data
+			testCharacter = new CharacterSheet (true);
+
+			//setup Tab View
+			ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
 			SetContentView (Resource.Layout.CharacterSheetView);
+
+		
 		}
 	}
 }
