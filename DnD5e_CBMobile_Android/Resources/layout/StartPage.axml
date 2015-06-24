@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <Button
-        android:id="@+id/NewCharacterBtn"
-        android:layout_width="fill_parent"
+<!--    <TextView
+        android:id="@+id/label1"
+        android:text="@string/newCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/newCharacterBtn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/newCharacter" />
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_button_add" />
 </LinearLayout>

@@ -36,7 +36,7 @@ namespace DnD5e_CBMobile_Core
 			if (isDummy) {
 
 				//Create Test Character
-				CharacterName = "Leeroy";
+				CharacterName = "Jarom Brightblade";
 				PlayerName = "James";
 				PlayerLevel = 1;
 				ProficiencyBonus = 2;
