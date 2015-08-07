@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="Character Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/charNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp" />
+    <EditText
+        android:text="Placeholder"
+        android:id="@+id/charName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/charNameLabel"
+        android:gravity="center"
+        android:layout_alignBaseline="@id/charNameLabel" />
+    <TextView
+        android:text="Character Class: "
+        android:id="@+id/charClassLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/charNameLabel"
+        android:layout_alignBaseline="@+id/charClass"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="3dp" />
+    <Spinner
+        android:id="@+id/charClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/charClassLabel"
+        android:layout_below="@id/charName"
+        android:gravity="right" />
+    <TextView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/textView1"
+        android:text="@string/attributesHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/charClassLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="3dp"
+        android:layout_marginTop="10dp" />
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/strengthLabel"
+                android:text="Strength:"
+                android:layout_column="1" />
+            <EditText
+                android:inputType="number"
+                android:text="8"
+                android:id="@+id/strengthValue"
+                android:layout_column="2" />
+            <TextView
+                android:inputType="number"
+                android:text="-1"
+                android:id="@+id/strengthMod"
+                android:layout_column="3" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/dexterityLabel"
+                android:text="Dexterity:"
+                android:layout_column="1" />
+            <EditText
+                android:inputType="number"
+                android:text="8"
+                android:id="@+id/dexterityValue"
+                android:layout_column="2" />
+            <TextView
+                android:inputType="number"
+                android:text="-1"
+                android:id="@+id/dexterityMod"
+                android:layout_column="3" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/constitutionLabel"
+                android:text="Constitution:"
+                android:layout_column="1" />
+            <EditText
+                android:inputType="number"
+                android:text="8"
+                android:id="@+id/constitutionValue"
+                android:layout_column="2" />
+            <TextView
+                android:inputType="number"
+                android:text="-1"
+                android:id="@+id/constitutionMod"
+                android:layout_column="3" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

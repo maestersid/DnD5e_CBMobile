@@ -36,6 +36,8 @@
     <Compile Include="CharacterSheet.cs" />
     <Compile Include="Skill.cs" />
     <Compile Include="PlayerClass.cs" />
+    <Compile Include="CharacterBackground.cs" />
+    <Compile Include="Alignment.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

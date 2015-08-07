@@ -1,8 +1,14 @@
 ﻿<Properties StartupItem="DnD5e_CBMobile_Android/DnD5e_CBMobile_Android.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DnD5e_CBMobile_Android/Properties/AndroidManifest.xml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DnD5e_CBMobile_Android/CharSheetOverviewFragment.cs">
     <Files>
-      <File FileName="DnD5e_CBMobile_Android/Properties/AndroidManifest.xml" Line="6" Column="12" />
+      <File FileName="DnD5e_CBMobile_Android/MainActivity.cs" Line="43" Column="17" />
+      <File FileName="DnD5e_CBMobile_Android/CharacterSheetActivity.cs" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Android/Resources/menu/charSheetMenu.xml" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Android/Resources/menu/home.xml" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Android/Resources/values/colors.xml" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Android/Resources/values/styles.xml" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Android/CharSheetOverviewFragment.cs" Line="16" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,12 +1,12 @@
 ﻿
-using System;
-using System.Collections.Generic;
+using DnD5e_CBMobile_Core;
 using Android.App;
 using Android.OS;
-using DnD5e_CBMobile_Core;
 using Android.Widget;
 using Android.Support.V7.App;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Support.Design.Widget;
+using Android.Support.V4.View;
 
 namespace DnD5e_CBMobile_Android
 {
@@ -28,10 +28,23 @@ namespace DnD5e_CBMobile_Android
 
 			var toolbar = FindViewById<Toolbar> (Resource.Id.toolbar);
 			SetSupportActionBar (toolbar);
-
 			SupportActionBar.Title = "Character Sheet";
 
+			var viewPager = FindViewById<ViewPager> (Resource.Id.viewPager);
+			SetupViewPagers (viewPager);
+
+			var tabLayout = FindViewById<TabLayout> (Resource.Id.tabs);
+			tabLayout.SetupWithViewPager (viewPager);
 			//SetupCharacterData();
+
+		}
+
+		private void SetupViewPagers(ViewPager viewPager)
+		{
+			var adapter = new MyAdapter (SupportFragmentManager);
+			adapter.AddFragment (new CharSheetOverviewFragment (), "Overview");
+			adapter.AddFragment(new CharSheetSkillsFragment(), "Skills");
+			viewPager.Adapter = adapter;
 
 		}
 
