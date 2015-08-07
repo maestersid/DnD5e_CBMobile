@@ -1,9 +1,8 @@
 ﻿<Properties StartupItem="DnD5e_CBMobile_Android/DnD5e_CBMobile_Android.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DnD5e_CBMobile_Android/Resources/values/colors.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DnD5e_CBMobile_Android/Properties/AndroidManifest.xml">
     <Files>
-      <File FileName="DnD5e_CBMobile_Android/Resources/values/colors.xml" Line="1" Column="1" />
-      <File FileName="DnD5e_CBMobile_Android/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Android/Properties/AndroidManifest.xml" Line="6" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

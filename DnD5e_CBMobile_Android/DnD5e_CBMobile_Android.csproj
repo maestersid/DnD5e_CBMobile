@@ -43,13 +43,13 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="Xamarin.Android.Support.v4">
-      <HintPath>..\packages\Xamarin.Android.Support.v4.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Android.Support.v4.22.2.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v7.AppCompat">
-      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.22.2.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.Design">
-      <HintPath>..\packages\Xamarin.Android.Support.Design.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.Design.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Android.Support.Design.22.2.1.0\lib\MonoAndroid403\Xamarin.Android.Support.Design.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -66,9 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
-    <AndroidResource Include="Resources\drawable\Icon.png" />
-    <AndroidResource Include="Resources\layout\StartPage.axml" />
-    <AndroidResource Include="Resources\layout\CharacterSheetView.axml" />
     <AndroidResource Include="Resources\values-v21\styles.xml" />
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_action_button_add.png" />
@@ -78,6 +75,33 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_action_button_add.png" />
     <AndroidResource Include="Resources\values\dimens.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_load_char.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_new_char.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_save_char.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_load_char.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_new_char.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_save_char.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_load_char.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_new_char.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_save_char.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_load_char.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_new_char.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_save_char.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_load_char.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_new_char.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_save_char.png" />
+    <AndroidResource Include="Resources\layout\spinner_item.axml" />
+    <AndroidResource Include="Resources\layout\toolbar.axml" />
+    <AndroidResource Include="Resources\menu\home.xml" />
+    <AndroidResource Include="Resources\layout\start_page.axml" />
+    <AndroidResource Include="Resources\layout\rightaligntext.axml" />
+    <AndroidResource Include="Resources\layout\charactersheet_main.axml" />
+    <AndroidResource Include="Resources\menu\charSheetMenu.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -93,6 +117,8 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\menu\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="xamandroidsupportdesign">

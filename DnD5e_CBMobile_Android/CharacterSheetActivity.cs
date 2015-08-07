@@ -1,18 +1,17 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.OS;
 using DnD5e_CBMobile_Core;
 using Android.Widget;
+using Android.Support.V7.App;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace DnD5e_CBMobile_Android
 {
-	[Activity (Label = "@string/newCharacter")]			
-	public class CharacterSheetActivity : Activity
+	[Activity (Label = "@string/characterSheet")]			
+	public class CharacterSheetActivity : AppCompatActivity
 	{
 
 		private CharacterSheet testCharacter;
@@ -25,30 +24,35 @@ namespace DnD5e_CBMobile_Android
 			//Create dummy data
 			testCharacter = new CharacterSheet (true);
 
-			SetContentView (Resource.Layout.CharacterSheetView);
+			SetContentView (Resource.Layout.charactersheet_main);
 
-			SetupCharacterData();
+			var toolbar = FindViewById<Toolbar> (Resource.Id.toolbar);
+			SetSupportActionBar (toolbar);
+
+			SupportActionBar.Title = "Character Sheet";
+
+			//SetupCharacterData();
 
 		}
 
 		private void SetupCharacterData()
 		{
-			var charNameText = FindViewById<EditText> (Resource.Id.charName);
-			charNameText.Text = testCharacter.CharacterName;
-			charNameText.TextChanged += OnCharacterNameChanged;
-
-			//Setup Class List Dropdown
-			Spinner classSpinner = FindViewById <Spinner> (Resource.Id.charClass);
-			classSpinner.ItemSelected += OnClassSelected;
-
-			var items = PlayerClass.GetClassList ();
-			var adapter = new ArrayAdapter<string> (this, Android.Resource.Layout.SimpleSpinnerItem, items);
-			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
-			classSpinner.Adapter = adapter;
-
-			//Setup Attributes
-			EditText strText = FindViewById<EditText> (Resource.Id.strengthValue);
-			strText.TextChanged += OnAttributeChanged;
+//			var charNameText = FindViewById<EditText> (Resource.Id.charName);
+//			charNameText.Text = testCharacter.CharacterName;
+//			charNameText.TextChanged += OnCharacterNameChanged;
+//
+//			//Setup Class List Dropdown
+//			Spinner classSpinner = FindViewById <Spinner> (Resource.Id.charClass);
+//			classSpinner.ItemSelected += OnClassSelected;
+//
+//			var items = PlayerClass.GetClassList ();
+//			var adapter = new ArrayAdapter<string> (this, Android.Resource.Layout.SimpleSpinnerItem, items);
+//			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
+//			classSpinner.Adapter = adapter;
+//
+//			//Setup Attributes
+//			EditText strText = FindViewById<EditText> (Resource.Id.strengthValue);
+//			strText.TextChanged += OnAttributeChanged;
 
 		}
 

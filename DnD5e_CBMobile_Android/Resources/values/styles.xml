@@ -1,9 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <style name="HomePageTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Override the app bar color -->
-        <item name="android:colorPrimary">@color/my_blue</item>
-        <!-- Override the color of UI controls -->
-        <item name="android:colorAccent">@color/my_green</item>
-    </style>
+	<style
+		name="MainAppTheme.Base"
+		parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="android:colorPrimary">@color/primary</item>>
+		<item name="android:colorPrimaryDark">@color/primary_dark</item>
+		<item name="android:colorAccent">@color/accent</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+	</style>
 </resources>

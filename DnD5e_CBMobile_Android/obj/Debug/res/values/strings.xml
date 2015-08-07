@@ -1,1 +1,1 @@
-<resources><string name="app_name">Dungeons and Dragons 5</string><string name="newCharacter">Create New Character:</string><string name="attributesHeader">Attributes</string></resources>
+<resources><string name="app_name">Dungeons and Dragons 5</string><string name="characterSheet">Character Sheet</string><string name="attributesHeader">Attributes</string><string name="new_char">New</string><string name="save_char">Save</string><string name="load_char">Load</string></resources>

@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <resources>
     <!-- Inherit from the light Material Theme -->
-    <style name="MyDnDTheme" parent="android:Theme.Material.Light.DarkActionBar">
-        <!-- Override the app bar color -->
-        <item name="android:colorPrimary">@color/my_blue</item>
-        <!-- Override the color of UI controls -->
-        <item name="android:colorAccent">@color/my_green</item>
+    <style name="MainAppTheme" parent="MainAppTheme.Base">
     </style>
 </resources>
