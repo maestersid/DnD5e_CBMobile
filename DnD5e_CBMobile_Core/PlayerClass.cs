@@ -17,9 +17,11 @@ namespace DnD5e_CBMobile_Core
 			}
 		}
 
-		public static List<string> GetClassList()
+		public static List<string> GetAllClasses()
 		{
-			var items = new List<string>{"Paladin", "Wizard", "Monk"};
+			var items = new List<string>{"Barbarian", "Bard", "Cleric", "Driud", 
+										"Fighter", "Monk", "Paladin", "Ranger", 
+										"Rogue", "Sorcerer", "Warlock","Wizard"};
 			return items;
 		}
 

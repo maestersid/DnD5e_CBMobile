@@ -14,7 +14,7 @@
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AssemblyName>DnD5e_CBMobile_Android</AssemblyName>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -50,6 +50,9 @@
     </Reference>
     <Reference Include="Xamarin.Android.Support.Design">
       <HintPath>..\packages\Xamarin.Android.Support.Design.22.2.1.0\lib\MonoAndroid403\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.22.2.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -102,7 +105,6 @@
     <AndroidResource Include="Resources\layout\toolbar.axml" />
     <AndroidResource Include="Resources\menu\home.xml" />
     <AndroidResource Include="Resources\layout\start_page.axml" />
-    <AndroidResource Include="Resources\layout\rightaligntext.axml" />
     <AndroidResource Include="Resources\layout\charactersheet_main.axml" />
     <AndroidResource Include="Resources\menu\charSheetMenu.xml" />
     <AndroidResource Include="Resources\layout\fragment_charsheet_skills.axml" />

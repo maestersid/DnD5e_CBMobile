@@ -9,7 +9,7 @@ namespace DnD5e_CBMobile_Core
 		public string PlayerName { get; set; }
 		public int ExperiencePoints { get; set; }
 
-		public int PlayerLevel { get; set; }
+		public int CharacterLevel { get; set; }
 		public int ProficiencyBonus { get; set; }
 
 		public int Speed { get; set; }
@@ -38,7 +38,7 @@ namespace DnD5e_CBMobile_Core
 				//Create Test Character
 				CharacterName = "Jarom Brightblade";
 				PlayerName = "James";
-				PlayerLevel = 1;
+				CharacterLevel = 1;
 				ProficiencyBonus = 2;
 
 				Race = new Race{ BonusAttributes = new Attributes { Strength = 2, Charisma = 1 }, Name = "Human" };
