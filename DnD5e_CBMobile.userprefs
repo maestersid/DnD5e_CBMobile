@@ -2,8 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="DnD5e_CBMobile_Android/CharacterSheetActivity.cs" Line="1" Column="1" />
-      <File FileName="DnD5e_CBMobile_Android/CharSheetOverviewFragment.cs" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Core/CharacterSheet.cs" Line="92" Column="1" />
+      <File FileName="DnD5e_CBMobile_Android/CharSheetSkillsFragment.cs" Line="19" Column="66" />
+      <File FileName="DnD5e_CBMobile_Android/Adapters/SkillDetailAdapter.cs" Line="52" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

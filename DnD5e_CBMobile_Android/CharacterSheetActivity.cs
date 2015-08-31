@@ -6,20 +6,26 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
 using DnD5e_CBMobile_Core;
+using Android.Views;
+using Android.Views.InputMethods;
 
 namespace DnD5e_CBMobile_Android
 {
 	[Activity (Label = "@string/characterSheet")]			
 	public class CharacterSheetActivity : AppCompatActivity
 	{
-		public CharacterSheet TestCharacter;
+		//Stores all loaded character info
+		public CharacterSheet CharacterInformation;
 
 		protected override void OnCreate (Bundle bundle)
 		{
-		
+			
 			base.OnCreate (bundle);
 
-			TestCharacter = new CharacterSheet (true);
+			//Load character data
+			var loadCharacter = Intent.GetStringExtra ("loadCharacter");
+
+			CharacterInformation = new CharacterSheet (loadCharacter);
 
 			SetContentView (Resource.Layout.charactersheet_main);
 
@@ -37,7 +43,7 @@ namespace DnD5e_CBMobile_Android
 
 		private void SetupViewPagers(ViewPager viewPager)
 		{
-			var adapter = new MyAdapter (SupportFragmentManager);
+			var adapter = new ViewPagerAdapter (SupportFragmentManager);
 			adapter.AddFragment (new CharSheetOverviewFragment (), "Overview");
 			adapter.AddFragment(new CharSheetSkillsFragment(), "Skills");
 			viewPager.Adapter = adapter;

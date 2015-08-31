@@ -10,7 +10,8 @@ namespace DnD5e_CBMobile_Core.Tests
 		public void CharacterAttributesAddsRacialModifiersToBaseAttributes()
 		{
 			var character = new CharacterSheet ();
-			var race = new Race{ BonusAttributes = new Attributes { Strength = 2, Charisma = 1 } };
+			var race = new RaceHelper(RaceHelper.Race.DRAGONBORN);
+			race.BonusAttributes = new Attributes { Strength = 2, Charisma = 1 };
 			character.Race = race;
 			var attributes = new Attributes {
 				Strength = 15,

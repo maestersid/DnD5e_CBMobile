@@ -8,12 +8,12 @@ using FragmentManager = Android.Support.V4.App.FragmentManager;
 
 namespace DnD5e_CBMobile_Android
 {
-	public class MyAdapter : Android.Support.V4.App.FragmentPagerAdapter
+	public class ViewPagerAdapter : Android.Support.V4.App.FragmentPagerAdapter
 	{
 		List<Fragment> fragments = new List<Fragment> ();
 		List<string> fragmentTitles = new List<string> ();
 
-		public MyAdapter (FragmentManager fm) : base (fm)
+		public ViewPagerAdapter (FragmentManager fm) : base (fm)
 		{
 		}
 

@@ -36,13 +36,18 @@ namespace DnD5e_CBMobile_Android
 
 		public override bool OnOptionsItemSelected (IMenuItem item)
 		{
+			Intent intent;
 			switch (item.ItemId) {
 			case Resource.Id.new_char:
-				var intent = new Intent (this, typeof(CharacterSheetActivity));
+				intent = new Intent (this, typeof(CharacterSheetActivity));
+				intent.PutExtra ("loadCharacter", "false");
 				StartActivity (intent);
 				return true;
 			case Resource.Id.load_char:
 				Toast.MakeText (this, "Load Character Pressed", ToastLength.Short).Show ();
+				intent = new Intent (this, typeof(CharacterSheetActivity));
+				intent.PutExtra ("loadCharacter", "true");
+				StartActivity (intent);
 				return true;
 			}
 			return true;

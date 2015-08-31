@@ -32,12 +32,13 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Attributes.cs" />
-    <Compile Include="Race.cs" />
     <Compile Include="CharacterSheet.cs" />
     <Compile Include="Skill.cs" />
     <Compile Include="PlayerClass.cs" />
     <Compile Include="CharacterBackground.cs" />
-    <Compile Include="Alignment.cs" />
+    <Compile Include="AlignmentInfo.cs" />
+    <Compile Include="RaceHelper.cs" />
+    <Compile Include="SkillsList.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
