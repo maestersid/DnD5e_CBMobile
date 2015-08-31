@@ -12,19 +12,18 @@ namespace DnD5e_CBMobile_Android
 {
 	public class SkillDetailAdapter : BaseAdapter<Skill>
 	{
-		private SkillsList _skills;
+		
 		private Activity _context;
 
-		public SkillDetailAdapter (Activity context, SkillsList skills)
+		public SkillDetailAdapter (Activity context)
 		{
-			_skills = skills;
 			_context = context;
 		}
 
 
 		public override Skill this [int index] {
 			get {
-				return _skills [index];
+				return ((CharacterSheetActivity)_context).CharacterInformation.Skills [index];
 			}
 		}
 
@@ -36,29 +35,31 @@ namespace DnD5e_CBMobile_Android
 		public override View GetView (int position, View convertView, ViewGroup parent)
 		{
 			var view = _context.LayoutInflater.Inflate (Resource.Layout.skillDisplayRow, parent, false);
+			CharacterSheet sheet = ((CharacterSheetActivity)_context).CharacterInformation;
 
 			var name = view.FindViewById<TextView> (Resource.Id.skillName);
 			var modValue = view.FindViewById<TextView> (Resource.Id.modValue);
 			var proficient = view.FindViewById<CheckBox> (Resource.Id.isTrained);
 			var skillMod = view.FindViewById<TextView> (Resource.Id.totalValue);
 
-			name.Text = _skills [position].Name;
-			modValue.Text = _skills [position].ModValue + "";
-			proficient.Checked = _skills [position].IsProficient;
+			name.Text = sheet.Skills [position].Name;
+			modValue.Text = sheet.Skills  [position].ModValue + "";
+			proficient.Checked = sheet.Skills  [position].IsProficient;
 
 			proficient.CheckedChange += (object sender, CompoundButton.CheckedChangeEventArgs e) => {
-				_skills [position].IsProficient = e.IsChecked;
-				skillMod.Text = _skills [position].TotalValue + "";
+				
+				sheet.Skills[position].IsProficient = e.IsChecked;
+				skillMod.Text = sheet.Skills [position].TotalValue + "";
 			};
 
-			skillMod.Text = _skills [position].TotalValue + "";
+			skillMod.Text = sheet.Skills  [position].TotalValue + "";
 
 			return view;
 		}
 
 		public override int Count {
 			get {
-				return _skills.Count;
+				return ((CharacterSheetActivity)_context).CharacterInformation.Skills.Count;
 			}
 		}
 

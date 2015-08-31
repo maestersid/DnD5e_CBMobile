@@ -39,7 +39,6 @@ namespace DnD5e_CBMobile_Android
 			var tabLayout = FindViewById<TabLayout> (Resource.Id.tabs);
 			tabLayout.SetupWithViewPager (viewPager);
 		
-
 		}
 
 		private void SetupViewPagers(ViewPager viewPager)

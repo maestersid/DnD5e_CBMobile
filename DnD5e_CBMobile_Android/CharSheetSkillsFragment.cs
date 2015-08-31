@@ -15,8 +15,7 @@ namespace DnD5e_CBMobile_Android
 
 			ListView view = root.FindViewById<ListView> (Resource.Id.skillsList);
 
-			var skills = ((CharacterSheetActivity)this.Activity).CharacterInformation.Skills;
-			view.Adapter = new SkillDetailAdapter (this.Activity, skills);
+			view.Adapter = new SkillDetailAdapter (this.Activity);
 
 			return root;
 
