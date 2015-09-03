@@ -50,7 +50,7 @@ namespace DnD5e_CBMobile_Android
 			Spinner racesSpinner = view.FindViewById <Spinner> (Resource.Id.charRace);
 
 			var items = RaceHelper.GetAllRaces ();
-			var adapter = new ArrayAdapter<string> (this.Activity, Resource.Layout.spinner_item, items);
+			var adapter = new SpinnerAdapter (this.Activity, items);
 			racesSpinner.Adapter = adapter;
 			racesSpinner.ItemSelected += OnRaceSelected;
 
@@ -60,7 +60,7 @@ namespace DnD5e_CBMobile_Android
 			//Setup Class List Dropdown
 			Spinner classSpinner = view.FindViewById <Spinner> (Resource.Id.charClass);
 			var classes = PlayerClass.GetAllClasses ();
-			var classAdapter = new ArrayAdapter (this.Activity, Resource.Layout.spinner_item, classes);
+			var classAdapter = new SpinnerAdapter (this.Activity, classes);
 			classSpinner.Adapter = classAdapter;
 			classSpinner.ItemSelected += OnClassSelected;
 
@@ -70,7 +70,7 @@ namespace DnD5e_CBMobile_Android
 			//Setup Alignment
 			Spinner alignmentSpinner = view.FindViewById <Spinner> (Resource.Id.charAlignment);
 			var alignments = AlignmentInfo.GetAllAlignments ();
-			var alignmentAdapter = new ArrayAdapter<string> (this.Activity, Resource.Layout.spinner_item, alignments);
+			var alignmentAdapter = new SpinnerAdapter (this.Activity, alignments);
 			alignmentSpinner.Adapter = alignmentAdapter; 	//Set Spinner adapter needs to happen before we set preselected data
 			alignmentSpinner.ItemSelected += OnAlignmentSelected;
 			//Set selected alignment data
@@ -82,7 +82,7 @@ namespace DnD5e_CBMobile_Android
 			Spinner backgroundSpinner = view.FindViewById <Spinner> (Resource.Id.charBackground);
 			backgroundSpinner.ItemSelected += OnBackgroundSelected;
 			var backgrounds = CharacterBackground.GetAllBackgrounds ();
-			var backgroundAdapter = new ArrayAdapter<string> (this.Activity, Resource.Layout.spinner_item, backgrounds);
+			var backgroundAdapter = new SpinnerAdapter (this.Activity, backgrounds);
 			backgroundSpinner.Adapter = backgroundAdapter;
 
 		}
@@ -114,6 +114,11 @@ namespace DnD5e_CBMobile_Android
 		#endregion
 
 		#region Attributes
+
+		/* 
+		 * TODO Create a Generic EditText Class for Attribute, 
+		 * self store identity and then attribute event can be single source;
+		*/
 
 		void SetupCharacterAttributes (View view)
 		{

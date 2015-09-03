@@ -1,10 +1,10 @@
 ﻿<Properties StartupItem="DnD5e_CBMobile_Android/DnD5e_CBMobile_Android.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DnD5e_CBMobile_Core/CharacterSheet.cs">
     <Files>
-      <File FileName="DnD5e_CBMobile_Core/CharacterSheet.cs" Line="92" Column="1" />
-      <File FileName="DnD5e_CBMobile_Android/CharSheetSkillsFragment.cs" Line="19" Column="66" />
-      <File FileName="DnD5e_CBMobile_Android/Adapters/SkillDetailAdapter.cs" Line="52" Column="3" />
+      <File FileName="DnD5e_CBMobile_Core/CharacterSheet.cs" Line="80" Column="5" />
+      <File FileName="DnD5e_CBMobile_Android/CharSheetOverviewFragment.cs" Line="44" Column="14" />
+      <File FileName="DnD5e_CBMobile_Core/RaceHelper.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -13,5 +13,5 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.DnD5e__CBMobile__Android MonoForAntroid.PreferredDevice="Nexus 4" AndroidDesignerPreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.DnD5e__CBMobile__Android AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>

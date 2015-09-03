@@ -64,6 +64,7 @@
     <Compile Include="CharSheetSkillsFragment.cs" />
     <Compile Include="Adapters\SkillDetailAdapter.cs" />
     <Compile Include="Adapters\ViewPagerAdapter.cs" />
+    <Compile Include="Adapters\SpinnerAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
