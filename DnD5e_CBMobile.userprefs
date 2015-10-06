@@ -1,10 +1,11 @@
-﻿<Properties StartupItem="DnD5e_CBMobile_Android/DnD5e_CBMobile_Android.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DnD5e_CBMobile_Core/CharacterSheet.cs">
+﻿<Properties StartupItem="DnD5e_CBMobile_iOS/DnD5e_CBMobile_iOS.csproj" GitUserInfo="UsingGIT" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DnD5e_CBMobile_Android/CharSheetOverviewFragment.cs">
     <Files>
-      <File FileName="DnD5e_CBMobile_Core/CharacterSheet.cs" Line="80" Column="5" />
-      <File FileName="DnD5e_CBMobile_Android/CharSheetOverviewFragment.cs" Line="44" Column="14" />
-      <File FileName="DnD5e_CBMobile_Core/RaceHelper.cs" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_iOS/OverviewViewController.cs" Line="56" Column="63" />
+      <File FileName="DnD5e_CBMobile_iOS/CustomControl/MyPickerModel.cs" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Core/CharacterSheet.cs" Line="1" Column="1" />
+      <File FileName="DnD5e_CBMobile_Android/CharSheetOverviewFragment.cs" Line="34" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

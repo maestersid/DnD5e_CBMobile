@@ -7,6 +7,7 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 using System.Collections;
 using Android.Content;
 using Android.Widget;
+using Android.Text;
 
 namespace DnD5e_CBMobile_Android
 {

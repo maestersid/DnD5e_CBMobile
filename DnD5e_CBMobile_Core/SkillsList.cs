@@ -9,12 +9,14 @@ namespace DnD5e_CBMobile_Core
 	{
 		private List<Skill> _skills;
 
+		/*
 		private List<string> _skilLNames = new List<string> {"Acrobatics", "Animal Handling", "Arcana", "Althetics",
 			"Deception", "History", "Insight", "Intimidation", 
 			"Investigation", "Medicine", "Nature", "Perception", 
 			"Performance", "Persuasion", "Religion", "Sleight of Hand", 
 			"Stealth", "Survival"
 		};
+		*/
 
 		private List<string> strSkills = new List<string> {
 			"Athletics",
