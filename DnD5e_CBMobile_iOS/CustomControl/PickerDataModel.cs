@@ -4,18 +4,18 @@ using System.Collections.Generic;
 
 namespace DnD5e_CBMobile_iOS
 {
-	public class MyPickerModel : UIPickerViewModel
+	public class PickerDataModel : UIPickerViewModel
 	{
 		private readonly string[] _data;
 		public string SelectedItem { get; private set;}
 
-		public MyPickerModel(List<string> info)
+		public PickerDataModel(List<string> info)
 		{
 			_data = info.ToArray ();
 			SelectedItem = _data [0];
 		}
 
-		public MyPickerModel (List<string> info, string name)
+		public PickerDataModel (List<string> info, string name)
 		{
 			_data = info.ToArray ();
 			SelectedItem = name;

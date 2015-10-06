@@ -33,6 +33,11 @@ namespace DnD5e_CBMobile_iOS
 			charName.Text = info.CharacterName;
 			charLevel.Text = info.CharacterLevel + "";
 
+			SetupPickerField(RaceHelper.GetAllRaces (), info.Race.Name, racePickerText);
+			SetupPickerField(PlayerClass.GetAllClasses (), info.Class.Name, classPickerText);
+			SetupPickerField (AlignmentInfo.GetAllAlignments (), info.Alignment, charAlignment);
+			SetupPickerField (CharacterBackground.GetAllBackgrounds (), info.Background.GetBackground (), charBackground);
+			/*
 			//Set Race Info
 			var racePicker = new UIPickerView (CGRect.Empty);
 			var model = new MyPickerModel (RaceHelper.GetAllRaces (), info.Race.Name);
@@ -58,41 +63,35 @@ namespace DnD5e_CBMobile_iOS
 			};
 
 			racePickerText.InputAccessoryView = toolbar;
+			*/
+		}
 
+		void SetupPickerField(List<string> data, string selected, UITextField textField)
+		{
+			var picker = new UIPickerView (CGRect.Empty);
+			var model = new PickerDataModel (data, selected);
+			model.OnPropertySelected += (object sender, EventArgs args) => 
+			{
+				textField.Text = model.SelectedItem;
+			};
 
-			//Setup Class Info
-			var classPicker = new UIPickerView (CGRect.Empty) {
-				ShowSelectionIndicator = true
-			};
-			var classModel = new MyPickerModel (PlayerClass.GetAllClasses (), info.Class.Name);
-			classModel.OnPropertySelected += (sender, args) => {
-				classPickerText.Text = classModel.SelectedItem;
-			};
-			classPicker.Model = classModel;
-			classPickerText.Text = classModel.SelectedItem;
-			classPickerText.InputView = classPicker;
+			picker.Model = model;
+			picker.Select (model.IndexOf (selected), 0, false);
+			textField.Text = model.SelectedItem;
 
-			var alignmentPicker = new UIPickerView (CGRect.Empty) {
-				ShowSelectionIndicator = true
-			};
-			var alignmentModel = new MyPickerModel (AlignmentInfo.GetAllAlignments (), info.Alignment);
-			alignmentModel.OnPropertySelected += (sender, args) => {
-				charAlignment.Text = alignmentModel.SelectedItem;
-			};
-			alignmentPicker.Model = alignmentModel;
-			charAlignment.Text = alignmentModel.SelectedItem;
-			charAlignment.InputView = alignmentPicker;
+			var toolbar = new UIToolbar (new RectangleF (0.0f, 0.0f, 50.0f, 44.0f));
 
-			var backgroundPicker = new UIPickerView (CGRect.Empty) {
-				ShowSelectionIndicator = true
+			var myButton = new UIBarButtonItem (UIBarButtonSystemItem.Done, delegate {
+				textField.ResignFirstResponder ();
+			});
+
+			toolbar.Items = new UIBarButtonItem[] {
+				new UIBarButtonItem (UIBarButtonSystemItem.FlexibleSpace),
+				myButton
 			};
-			var backgroundModel = new MyPickerModel (CharacterBackground.GetAllBackgrounds ());
-			backgroundModel.OnPropertySelected += (sender, args) => {
-				charBackground.Text = backgroundModel.SelectedItem;
-			};
-			backgroundPicker.Model = backgroundModel;
-			charBackground.Text = backgroundModel.SelectedItem;
-			charBackground.InputView = backgroundPicker;
+
+			textField.InputView = picker;
+			textField.InputAccessoryView = toolbar;
 		}
     }
 

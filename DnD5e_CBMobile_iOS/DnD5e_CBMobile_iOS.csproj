@@ -108,11 +108,12 @@
     <Compile Include="SkillSheetViewController.designer.cs">
       <DependentUpon>SkillSheetViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomControl\MyPickerModel.cs" />
     <Compile Include="CharacterSheetViewController.cs" />
     <Compile Include="CharacterSheetViewController.designer.cs">
       <DependentUpon>CharacterSheetViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControl\PickerControl.cs" />
+    <Compile Include="CustomControl\PickerDataModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

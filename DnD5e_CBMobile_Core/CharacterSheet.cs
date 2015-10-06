@@ -33,8 +33,7 @@ namespace DnD5e_CBMobile_Core
 
 		public SkillsList Skills{ get; set; }
 
-		// @TODO later
-		//		public CharacterBackground Background { get; set; }
+		public CharacterBackground Background { get; set; }
 
 		private Attributes baseAttributes;
 
@@ -88,6 +87,8 @@ namespace DnD5e_CBMobile_Core
 					Wisdom = 10,
 					Charisma = 8
 				};
+
+				Background = new CharacterBackground ();
 						
 				Skills = new SkillsList (FinalAttributes, ProficiencyBonus);
 			}
